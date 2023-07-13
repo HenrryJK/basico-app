@@ -19,11 +19,11 @@ export class ChatService {
 
       this.wsService.emit('mensaje' , payload);
    }
-
    // despues de haber creado el listen que esta en el websocket.service
     getMessages(){
       return this.wsService.listen('mensaje-nuevo');
     }
+
 
 
 }
