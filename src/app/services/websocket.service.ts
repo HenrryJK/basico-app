@@ -32,4 +32,9 @@ export class WebsocketService {
         console.log('Emitiendo' , evento);
     }
 
+    // escucha cualquier evento que emita el setvidor
+    listen( evento: string){
+        return this.socket.fromEvent(evento);
+    }
+
 }
