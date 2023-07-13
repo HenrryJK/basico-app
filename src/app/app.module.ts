@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 //sockets
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { environment } from 'src/environments/environment';
+import { FooterComponent } from './components/footer/footer.component';
 
 const config: SocketIoConfig = {
   // el url no puede estar aqui , ni en duro.
@@ -15,7 +16,8 @@ const config: SocketIoConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

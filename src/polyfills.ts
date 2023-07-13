@@ -53,4 +53,4 @@ import 'zone.js';  // Included with Angular CLI.
  */
 
 // opcional relacionado apra que funciona el app , cuando implementamos el socket
-// (window as any).global = window;
+(window as any).global = window;
